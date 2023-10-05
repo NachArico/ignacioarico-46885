@@ -1,5 +1,5 @@
 /*!--------RESET--------*/
-*{
+* {
     margin: 0%;
     padding: 0%;
 }
@@ -11,39 +11,45 @@
 
 
 /*!--------HEADER--------*/
-header{
-background-color: #0E1C36;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 20px;
-z-index: 1;
-top: 0;
-position: sticky;
-flex-wrap: wrap;
+header {
+    background-color: #0E1C36;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    z-index: 1;
+    top: 0;
+    position: sticky;
+    flex-wrap: wrap;
 }
 
 
-header h1{
+header h1 {
     font-size: 60px;
     font-style: italic;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #ffffff;
 }
 
-header nav ul{
+.barra-nav {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     list-style: none;
     display: flex;
     font-style: oblique;
-    
+    display: inline-block;
+    font-size: 25px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 7px;
+
 }
 
-header nav ul li a{
+header nav ul li a {
     text-decoration: none;
     color: rgb(240, 238, 238);
 }
 
-header nav ul li{
+header nav ul li {
     display: inline-block;
     font-size: 25px;
     margin-right: 5px;
@@ -55,9 +61,10 @@ header h1 span {
     color: deepskyblue;
 
 }
+
 /*!--------MAIN--------*/
 
-.hero{
+.hero {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,21 +74,22 @@ header h1 span {
     color: rgb(255, 255, 255);
     font-size: 25px;
     font-style: italic;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-image: url("../img/fondo.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment:fixed;
+    background-attachment: fixed;
 }
 
-.hero h2{
-border: solid white;
-padding: 20px;
-background-color: rgba(0, 0, 0, 0.589);
+.hero h2 {
+    border: solid white;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.589);
 
 }
-.bienvenidos h2{
+
+.bienvenidos h2 {
     display: flex;
     justify-content: center;
     font-size: 23px;
@@ -89,7 +97,7 @@ background-color: rgba(0, 0, 0, 0.589);
     font-style: oblique;
 }
 
-.bienvenidos{
+.bienvenidos {
     display: flex;
     justify-content: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -98,45 +106,38 @@ background-color: rgba(0, 0, 0, 0.589);
     color: white;
 }
 
-.bienvenidos div img{
-width: 100%;
-height: 600px;
+.bienvenidos div img {
+    width: 100%;
+    height: 600px;
 }
 
-.productos{
+.productos {
     background-color: #0E1C36;
 }
 
-.productos h2{
+.productos h2 {
     display: flex;
     justify-content: center;
     font-size: 30px;
     padding: 10px;
     color: white;
 }
-.contenedor-productos{
+
+.contenedor-productos {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 15px;
     padding: 20px;
     flex-wrap: wrap;
 }
+
 .productos div img {
     width: 245px;
     height: 245px;
 
 }
 
-.productos-nav{
-    display: inline-block;
-    font-size: 25px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    padding: 7px;
-}
-
-.pagina-productos{
+.pagina-productos {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -145,7 +146,7 @@ height: 600px;
     padding: 20px;
 }
 
-.pagina-productos h3{
+.pagina-productos h3 {
     display: flex;
     justify-content: center;
     font-size: 25px;
@@ -153,106 +154,143 @@ height: 600px;
     color: white;
 }
 
-.pagina-productos div a{
+.pagina-productos div a {
     display: flex;
     text-decoration: none;
     background-color: #000000;
     justify-content: center;
-    color: white;
+    color: deepskyblue;
     padding: 5px;
 }
 
-.contenedor-productos div h3{
+.contenedor-productos div h3 {
     color: white;
 }
-.productos .contenedor-productos div{
+
+.productos .contenedor-productos div {
     width: 250px;
     height: 350px;
     border: 3px solid #afcbff;
     text-align: center;
 }
 
-.productos .contenedor-productos div a{
+.productos .contenedor-productos div a {
     text-decoration: none;
-    color: white;
+    color: deepskyblue;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.979);
+    background-color: rgba(0, 0, 0, 0.829);
 }
 
-.productos div h3{
+.productos div h3 {
     margin: 10px;
+}
+
+.Nosotros div{
+display: flex;
+text-align: center;
+justify-content: center;
+flex-direction: column;
+background-color: #0E1C36;
+color: deepskyblue;
+font-size: 25px;
+padding: 20px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-style: oblique;
+}
+
+.Nosotros h2{
+    margin-bottom: 25px;
+}
+
+.Nosotros div img{
+    width: 100%;
+    height: 70%;
+    margin-top: 50px;
 }
 
 /*!--------FOOTER--------*/
 
-footer .contenedor-footer{
+footer .contenedor-footer {
     display: flex;
     justify-content: right;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
 }
 
-.contenedor-footer a{
+.contenedor-footer a {
 
     padding: 8px;
 }
 
-footer{
+
+footer {
     background-color: rgba(48, 42, 42, 0.849);
     color: rgb(0, 0, 0);
 }
 
-footer p{
-    background-color: white;
+footer p {
+    background-color: rgb(0, 0, 0);
     text-align: center;
     font-size: 20px;
+    color: deepskyblue;
 }
 
 @media screen and (max-width:880px) {
-    header{
+    header {
+        display: flex;
         flex-direction: column;
         position: static;
         justify-content: space-between;
         text-align: center;
     }
 
+    @media screen and (max-width:730px){
+    .nosotros-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+    }       
+    }
+
 
 }
 
-@media screen and (max-width:489px) {
-    header nav ul{
+@media screen and (max-width:606px) {
+    header nav ul {
         flex-direction: column;
     }
 }
 
-@media screen and (max-width:950px){
-    .hero{
+@media screen and (max-width:950px) {
+    .hero {
         flex-direction: column;
-}
-
-}
-
-@media screen and (max-width:750px){
-    .bienvenidos div img{
-        flex-direction: column;
-        width: 500px;
-        height: 300px;
     }
-    @media screen and (max-width:503px){
-        .bienvenidos div img{
+
+}
+
+@media screen and (max-width:750px) {
+    .bienvenidos div {
+        flex-direction: column;
+
+    }
+
+    @media screen and (max-width:503px) {
+        .bienvenidos div img {
             flex-direction: column;
             justify-content: center;
-            width: 350px;
-            height: 200px;
+            width: 100%;
+            height: 400px;
         }
-}
+    }
 
-.hero h2{
-    width: 80%;
-    text-align: center;
-}
-.hero p{
-    width: 80%;
-    text-align: center;
-}
+    .hero h2 {
+        width: 80%;
+        text-align: center;
+    }
+
+    .hero p {
+        width: 80%;
+        text-align: center;
+    }
 }
